@@ -1,0 +1,7 @@
+name: Drugs
+version: '1.0-SNAPSHOT'
+main: net.sirenize.drugs
+api-version: '1.21'
+prefix: [ AMPLIFY ]
+authors: [ Sirenize ]
+description: The official Amplify plugin
