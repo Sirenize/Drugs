@@ -341,7 +341,7 @@ public class Events implements Listener {
                     player.addPotionEffect(new PotionEffect(PotionEffectType.STRENGTH, 20 * 90, 1));
                     player.addPotionEffect(new PotionEffect(PotionEffectType.INSTANT_HEALTH, 20 * 90, 1));
                     player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP_BOOST, 20 * 90, 1));
-                    player.addPotionEffect(new PotionEffect(PotionEffectType.NAUSEA, 20 * 90, 1));
+                    player.addPotionEffect(new PotionEffect(PotionEffectType.HASTE, 20 * 90, 1));
 
                     player.playSound(player.getLocation(), Sound.ENTITY_GENERIC_DRINK, 1f, 1f);
 
