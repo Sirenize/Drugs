@@ -86,7 +86,7 @@ public class Events implements Listener {
                     event.setCancelled(true);
 
                     player.addPotionEffect(new PotionEffect(PotionEffectType.STRENGTH, 20 * 90, 1));
-                    player.addPotionEffect(new PotionEffect(PotionEffectType.HASTE, 20 * 90, 1));
+                    player.addPotionEffect(new PotionEffect(PotionEffectType.HASTE, 20 * 90, 9));
                     player.addPotionEffect(new PotionEffect(PotionEffectType.HEALTH_BOOST, 20 * 90, 1));
                     player.addPotionEffect(new PotionEffect(PotionEffectType.RESISTANCE, 20 * 90, 1));
 
@@ -171,7 +171,7 @@ public class Events implements Listener {
 
                     player.addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, 20 * 90, 1));
                     player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 20 * 90, 1));
-                    player.addPotionEffect(new PotionEffect(PotionEffectType.HASTE, 20 * 90, 1));
+                    player.addPotionEffect(new PotionEffect(PotionEffectType.HASTE, 20 * 90, 9));
                     player.addPotionEffect(new PotionEffect(PotionEffectType.NAUSEA, 20 * 90, 1));
                     player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW_FALLING, 20 * 90, 1));
 
@@ -214,7 +214,7 @@ public class Events implements Listener {
 
                     player.addPotionEffect(new PotionEffect(PotionEffectType.NAUSEA, 20 * 90, 1));
                     player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 20 * 90, 1));
-                    player.addPotionEffect(new PotionEffect(PotionEffectType.HASTE, 20 * 90, 1));
+                    player.addPotionEffect(new PotionEffect(PotionEffectType.HASTE, 20 * 90, 9));
                     player.addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 20 * 90, 1));
                     player.addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, 20 * 90, 1));
 
@@ -341,7 +341,7 @@ public class Events implements Listener {
                     player.addPotionEffect(new PotionEffect(PotionEffectType.STRENGTH, 20 * 90, 1));
                     player.addPotionEffect(new PotionEffect(PotionEffectType.INSTANT_HEALTH, 20 * 90, 1));
                     player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP_BOOST, 20 * 90, 1));
-                    player.addPotionEffect(new PotionEffect(PotionEffectType.HASTE, 20 * 90, 1));
+                    player.addPotionEffect(new PotionEffect(PotionEffectType.HASTE, 20 * 90, 9));
 
                     player.playSound(player.getLocation(), Sound.ENTITY_GENERIC_DRINK, 1f, 1f);
 
