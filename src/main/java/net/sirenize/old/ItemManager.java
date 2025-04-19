@@ -1,4 +1,4 @@
-package net.sirenize;
+package net.sirenize.old;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

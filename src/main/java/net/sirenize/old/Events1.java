@@ -1,4 +1,4 @@
-package net.sirenize;
+package net.sirenize.old;
 
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
@@ -10,7 +10,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
-public class Events implements Listener {
+public class Events1 implements Listener {
 
     @EventHandler
 
