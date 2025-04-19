@@ -1,46 +1,40 @@
-name: "§l§bACID"
-material: PAPER
+name: "§l§3DMT"
+material: GLOWSTONE_DUST
 lore:
   - "§l§aEffects:"
-  - "§7- §6Nausea"
-  - "§7- §6Night Vision"
-  - "§7- §6Health Boost"
+  - "§7- §6Resistance"
   - "§7- §6Slow Falling"
+  - "§7- §6Slowness"
+  - "§7- §6Glowing"
   - "§n§7Right-Click To Use"
 enchantments:
   - LUCK_OF_THE_SEA:1
 hide_flags: true
 recipe:
   shape:
-    - "XYX"
-    - "YWY"
-    - "XYX"
+    - "XXX"
+    - "XWX"
+    - "XWX"
   ingredients:
-    X: SPIDER_EYE
-    Y: PAPER
-    W: WATER_BUCKET
-
+    X: SUGAR
+    W: GLOWSTONE_DUST
 on_right_click:
   - effect: potion
-    type: NAUSEA
+    type: RESISTANCE
     duration: 90
     amplifier: 1
-
-  - effect: potion
-    type: NIGHT_VISION
-    duration: 90
-    amplifier: 1
-
-  - effect: potion
-    type: HEALTH_BOOST
-    duration: 90
-    amplifier: 1
-
   - effect: potion
     type: SLOW_FALLING
     duration: 90
     amplifier: 1
-
+  - effect: potion
+    type: SLOWNESS
+    duration: 90
+    amplifier: 1
+  - effect: potion
+    type: GLOWING
+    duration: 90
+    amplifier: 1
   - effect: sound
     sound: ENTITY_GENERIC_DRINK
     volume: 1

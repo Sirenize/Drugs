@@ -1,10 +1,11 @@
-name: "§l§bACID"
-material: PAPER
+name: "§l§cKETAMINE"
+material: POWDER_SNOW_BUCKET
 lore:
   - "§l§aEffects:"
-  - "§7- §6Nausea"
   - "§7- §6Night Vision"
-  - "§7- §6Health Boost"
+  - "§7- §6Speed"
+  - "§7- §6Haste"
+  - "§7- §6Nausea"
   - "§7- §6Slow Falling"
   - "§n§7Right-Click To Use"
 enchantments:
@@ -12,35 +13,33 @@ enchantments:
 hide_flags: true
 recipe:
   shape:
+    - "XXX"
     - "XYX"
-    - "YWY"
-    - "XYX"
+    - "XXX"
   ingredients:
-    X: SPIDER_EYE
-    Y: PAPER
-    W: WATER_BUCKET
-
+    X: SNOWBALL
+    Y: LAVA_BUCKET
 on_right_click:
-  - effect: potion
-    type: NAUSEA
-    duration: 90
-    amplifier: 1
-
   - effect: potion
     type: NIGHT_VISION
     duration: 90
     amplifier: 1
-
   - effect: potion
-    type: HEALTH_BOOST
+    type: SPEED
     duration: 90
     amplifier: 1
-
+  - effect: potion
+    type: HASTE
+    duration: 90
+    amplifier: 9
+  - effect: potion
+    type: NAUSEA
+    duration: 90
+    amplifier: 1
   - effect: potion
     type: SLOW_FALLING
     duration: 90
     amplifier: 1
-
   - effect: sound
     sound: ENTITY_GENERIC_DRINK
     volume: 1

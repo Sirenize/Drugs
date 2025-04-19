@@ -1,46 +1,41 @@
-name: "§l§bACID"
-material: PAPER
+name: "§l§6CIGGY"
+material: REDSTONE_TORCH
 lore:
   - "§l§aEffects:"
-  - "§7- §6Nausea"
-  - "§7- §6Night Vision"
-  - "§7- §6Health Boost"
-  - "§7- §6Slow Falling"
+  - "§7- §6Saturation"
+  - "§7- §6Damage Resistance"
+  - "§7- §6Jump Boost"
+  - "§7- §6Mining Fatigue"
   - "§n§7Right-Click To Use"
 enchantments:
   - LUCK_OF_THE_SEA:1
 hide_flags: true
 recipe:
   shape:
-    - "XYX"
+    - " X "
     - "YWY"
-    - "XYX"
+    - "YYY"
   ingredients:
-    X: SPIDER_EYE
+    X: GUNPOWDER
     Y: PAPER
-    W: WATER_BUCKET
-
+    W: STICK
 on_right_click:
   - effect: potion
-    type: NAUSEA
+    type: SATURATION
     duration: 90
     amplifier: 1
-
   - effect: potion
-    type: NIGHT_VISION
+    type: DAMAGE_RESISTANCE
     duration: 90
     amplifier: 1
-
   - effect: potion
-    type: HEALTH_BOOST
+    type: JUMP_BOOST
     duration: 90
     amplifier: 1
-
   - effect: potion
-    type: SLOW_FALLING
+    type: MINING_FATIGUE
     duration: 90
     amplifier: 1
-
   - effect: sound
     sound: ENTITY_GENERIC_DRINK
     volume: 1

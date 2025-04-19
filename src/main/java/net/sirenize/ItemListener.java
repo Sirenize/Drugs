@@ -3,7 +3,6 @@ package net.sirenize;
 import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.*;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.*;
@@ -26,6 +25,7 @@ public class ItemListener implements Listener {
 
         for (ItemData data : items.values()) {
             if (data.item.isSimilar(held)) {
+                event.setCancelled(true);
                 handleEffects(player, data.rightClickEffects);
             }
         }

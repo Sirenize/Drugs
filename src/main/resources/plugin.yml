@@ -5,3 +5,18 @@ api-version: '1.21'
 prefix: DRUGS
 authors: [ Sirenize ]
 description: Drugs!!!
+
+commands:
+  drugs:
+    description: The main command for the Drugs plugin
+    usage: /drugs <subcommand>
+    aliases: [drug, d]
+    permissions:
+      drugs.admin:
+        description: Drugs Admin
+        default: op
+
+permissions:
+  drugs.admin:
+    description: Permission
+    default: op

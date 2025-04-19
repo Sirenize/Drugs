@@ -1,24 +1,24 @@
-name: "§l§bACID"
-material: PAPER
+name: "§l§bMETH"
+material: PRISMARINE_SHARD
 lore:
   - "§l§aEffects:"
-  - "§7- §6Nausea"
-  - "§7- §6Night Vision"
-  - "§7- §6Health Boost"
-  - "§7- §6Slow Falling"
+  - "§7- §6Absorption"
+  - "§7- §6Resistance"
+  - "§7- §6Fire Resistance"
+  - "§7- §6Levitation"
   - "§n§7Right-Click To Use"
 enchantments:
   - LUCK_OF_THE_SEA:1
 hide_flags: true
 recipe:
   shape:
-    - "XYX"
-    - "YWY"
-    - "XYX"
+    - " X "
+    - " Y "
+    - " W "
   ingredients:
-    X: SPIDER_EYE
+    X: DIRT
     Y: PAPER
-    W: WATER_BUCKET
+    W: GUNPOWDER
 
 on_right_click:
   - effect: potion

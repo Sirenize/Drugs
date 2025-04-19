@@ -48,26 +48,31 @@ public class ItemLoader {
             }
 
             // recipe
-            if (config.isConfigurationSection("recipe")) {
-                var recipeSec = config.getConfigurationSection("recipe");
-                if (recipeSec != null) {
-                    List<String> shape = recipeSec.getStringList("shape");
-                    var ingredients = recipeSec.getConfigurationSection("ingredients");
-                    if (ingredients != null) {
-                        ShapedRecipe recipe = new ShapedRecipe(
-                                new NamespacedKey(plugin, "custom_" + itemId),
-                                item
-                        );
-                        recipe.shape(shape.toArray(new String[0]));
-                        for (String key : ingredients.getKeys(false)) {
-                            Material ingMat = Material.getMaterial(ingredients.getString(key));
-                            if (ingMat != null) {
-                                recipe.setIngredient(key.charAt(0), ingMat);
+            NamespacedKey recipeKey = new NamespacedKey(plugin, "custom_" + itemId);
+            if (Bukkit.getRecipe(recipeKey) == null) {
+                if (config.isConfigurationSection("recipe")) {
+                    var recipeSec = config.getConfigurationSection("recipe");
+                    if (recipeSec != null) {
+                        List<String> shape = recipeSec.getStringList("shape");
+                        var ingredients = recipeSec.getConfigurationSection("ingredients");
+                        if (ingredients != null) {
+                            ShapedRecipe recipe = new ShapedRecipe(
+                                    new NamespacedKey(plugin, "custom_" + itemId),
+                                    item
+                            );
+                            recipe.shape(shape.toArray(new String[0]));
+                            for (String key : ingredients.getKeys(false)) {
+                                Material ingMat = Material.getMaterial(ingredients.getString(key));
+                                if (ingMat != null) {
+                                    recipe.setIngredient(key.charAt(0), ingMat);
+                                }
                             }
+                            Bukkit.addRecipe(recipe);
                         }
-                        Bukkit.addRecipe(recipe);
                     }
                 }
+            } else {
+                plugin.getLogger().info("Recipe with key 'custom_acid' already exists. Skipping registration.");
             }
 
             // effects

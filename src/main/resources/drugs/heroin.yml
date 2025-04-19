@@ -1,46 +1,41 @@
-name: "§l§bACID"
-material: PAPER
+name: "§l§4HEROIN"
+material: WITHER_ROSE
 lore:
   - "§l§aEffects:"
-  - "§7- §6Nausea"
-  - "§7- §6Night Vision"
-  - "§7- §6Health Boost"
-  - "§7- §6Slow Falling"
+  - "§7- §6Weakness"
+  - "§7- §6Slowness"
+  - "§7- §6Unluck"
+  - "§7- §6Poison"
   - "§n§7Right-Click To Use"
 enchantments:
   - LUCK_OF_THE_SEA:1
 hide_flags: true
 recipe:
   shape:
-    - "XYX"
-    - "YWY"
-    - "XYX"
+    - "XYY"
+    - " XW"
+    - " X "
   ingredients:
-    X: SPIDER_EYE
-    Y: PAPER
-    W: WATER_BUCKET
-
+    X: DIRT
+    Y: RED_MUSHROOM
+    W: WOODEN_SWORD
 on_right_click:
   - effect: potion
-    type: NAUSEA
+    type: WEAKNESS
     duration: 90
     amplifier: 1
-
   - effect: potion
-    type: NIGHT_VISION
+    type: SLOWNESS
     duration: 90
     amplifier: 1
-
   - effect: potion
-    type: HEALTH_BOOST
+    type: UNLUCK
     duration: 90
     amplifier: 1
-
   - effect: potion
-    type: SLOW_FALLING
+    type: POISON
     duration: 90
     amplifier: 1
-
   - effect: sound
     sound: ENTITY_GENERIC_DRINK
     volume: 1
